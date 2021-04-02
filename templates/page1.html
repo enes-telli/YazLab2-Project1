@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h2>Kelime Frekansı İstenen Url:</h2>
+<form action="#" method="POST">
+    <p><input type="text" name="input" value="{{text}}" size="80" /></p>
+    <p><input type="submit" value="submit" /></p>
+</form>
+{% if boolean == True %}
+<h2>Kelimeler:</h2>
+<textarea id="w3review" name="w3review" rows="16" cols="80">{{counter}}</textarea>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+<form action="#" method="POST">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Birinci Url:</h2>
+            <p><input type="text" name="input1" value="{{text1}}" size="80" /></p>
+        </div>
+        <div class="col-sm-6">
+            <h2>Diğer Url(ler):</h2>
+            <p><input type="text" name="input2" value="{{text2}}" size="80" /></p>
+            <p><input type="submit" value="submit" /></p>
+        </div>
+    </div>
+
+</form>
+{% if boolean == True %}
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Anahtar Kelimeler:</h2>
+        <textarea id="w3review" name="w3review" rows="16" cols="80">{{counter1}}</textarea>
+    </div>
+    <div class="col-sm-6">
+        <h3>Anahtar Kelimeler:</h2>
+        <textarea id="w3review" name="w3review" rows="16" cols="80">{{counter2}}</textarea>
+        <h3>Skor(lar):</h2>
+        <textarea id="w3review" name="w3review" rows="16" cols="80">{{scores}}</textarea>
+    </div>
+</div>
+{% endif %}
+
+{% endblock %}
